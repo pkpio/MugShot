@@ -1,0 +1,175 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <!-- Status -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/status"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/frontCamStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/frontCamera"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/deviceAdminStatusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/SystemAdmin"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <ToggleButton
+                android:id="@+id/deviceAdminSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/systemAdminStatusButton"
+                android:textOff="OFF"
+                android:textOn="ON" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/grey"
+            android:textSize="16sp" />
+
+        <!-- Settings -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/settings"
+            android:textColor="@color/blue"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/unlockCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/unlockCountSettingText"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <SeekBar
+            android:id="@+id/failedAttemptsCountBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:max="4"
+            android:progress="1" />
+
+        <Button
+            android:id="@+id/dropboxButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dropboxButton" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/grey"
+            android:textSize="16sp" />
+
+        <!-- Contacts -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/contacts"
+                android:textColor="@color/blue"
+                android:textSize="24sp" />
+
+            <CheckBox
+                android:id="@+id/contactsState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:text="@string/contactsExplain"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/contact1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact1Hint"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/contact2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact2Hint"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/contact3"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/contact3Hint"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/contactsMessage"
+            android:layout_width="280dp"
+            android:layout_height="120dp"
+            android:hint="@string/contactMessageHint"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/contactsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contactsButton" />
+    </LinearLayout>
+
+</ScrollView>
