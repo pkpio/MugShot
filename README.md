@@ -20,9 +20,9 @@ And in any case, Where ever the original file(s) - one(s) contained in this thre
 
 © 2013, Praveen Kumar Pendyala. Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported license, http://creativecommons.org/licenses/by-nc-sa/3.0/ Thank you.
 
-This work is derived from TumTumTracker, a work by Praveen Kumar Pendyala.
+This work is derived from MugShot, a work by Praveen Kumar Pendyala.
 
-Source code: https://github.com/praveendath92/TumTumTracker
+Source code: https://github.com/praveendath92/MugShot
 
 All further dervied versions of this code MUST also contain these lines.
 
